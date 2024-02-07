@@ -127,6 +127,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/umi/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml \
     vendor/xiaomi/umi/proprietary/vendor/etc/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_38_0c_0a_cmd_mode_dsc_dsi_panel.xml \
     vendor/xiaomi/umi/proprietary/vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_42_02_0b_cmd_mode_dsc_dsi_panel.xml \
+    vendor/xiaomi/umi/proprietary/vendor/etc/sensors/calibratedCheck.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/calibratedCheck.json \
     vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
     vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/bmp285_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp285_0.json \
     vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
@@ -163,6 +164,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
     vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
     vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/sns_sar_algo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_sar_algo.json \
+    vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/sns_screen_down.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_screen_down.json \
     vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
     vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
     vendor/xiaomi/umi/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
@@ -370,10 +372,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/umi/proprietary/vendor/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_depth.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_depth.bin \
     vendor/xiaomi/umi/proprietary/vendor/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.umi_sunny_gc02m1_macro.bin \
     vendor/xiaomi/umi/proprietary/vendor/lib64/camera/com.qti.tuned.umi_sunny_ov13b10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.umi_sunny_ov13b10.bin \
-    vendor/xiaomi/umi/proprietary/vendor/lib64/camera/com.qti.tuned.umi_sunny_ov16e10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.umi_sunny_ov16e10.bin \
     vendor/xiaomi/umi/proprietary/vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k3t2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.umi_sunny_s5k3t2.bin \
-    vendor/xiaomi/umi/proprietary/vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k5e8yx_depth.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.umi_sunny_s5k5e8yx_depth.bin \
-    vendor/xiaomi/umi/proprietary/vendor/lib64/camera/com.qti.tuned.umi_sunny_s5k5e8yx_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.umi_sunny_s5k5e8yx_macro.bin \
     vendor/xiaomi/umi/proprietary/vendor/lib64/camera/components/com.arcsoft.node.deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.deflicker.so \
     vendor/xiaomi/umi/proprietary/vendor/lib64/camera/components/com.arcsoft.node.smoothtransition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.smoothtransition.so \
     vendor/xiaomi/umi/proprietary/vendor/lib64/camera/components/com.arcsoft.node.superportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.superportrait.so \
@@ -571,6 +570,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/umi/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 PRODUCT_PACKAGES += \
-    HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON \
+    HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     com.android.hotwordenrollment.common.util
